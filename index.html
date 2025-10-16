@@ -2,48 +2,95 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Life</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <title>Yumekawa Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #fffaf7;
-      font-family: 'Noto Sans JP', sans-serif;
-      color: #444;
+      background: linear-gradient(180deg, #fff0f6 0%, #e6f0ff 100%);
+      font-family: 'Zen Maru Gothic', sans-serif;
+      color: #555;
       margin: 0;
       padding: 0;
     }
+
     header {
-      background-color: #f3c6c6;
       text-align: center;
-      padding: 40px 0;
-      border-bottom: 2px solid #d8cfc4;
+      padding: 50px 0;
+      background: linear-gradient(90deg, #fcd9f4, #dfe7ff);
+      color: #666;
+      border-bottom: 3px solid #f1d3eb;
+      box-shadow: 0 4px 10px rgba(255,182,193,0.2);
     }
+
     h1 {
-      font-family: 'Dela Gothic One', cursive;
-      color: #444;
+      font-size: 2.4em;
       margin: 0;
-      letter-spacing: 2px;
+      color: #ff9acb;
+      text-shadow: 0 0 8px rgba(255,182,193,0.6);
     }
+
     main {
       max-width: 700px;
-      margin: 50px auto;
-      background: white;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+      border-radius: 25px;
       padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
     }
+
     h2 {
-      color: #f3a6a6;
-      border-left: 4px solid #f3a6a6;
+      color: #b990f6;
+      border-left: 4px solid #b990f6;
       padding-left: 10px;
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
+
     p {
-      line-height: 1.8;
+      line-height: 1.9;
+      font-size: 1.05em;
     }
+
+    /* キラキラアニメーション風 */
+    .sparkle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: radial-gradient(circle, #fff 0%, transparent 70%);
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: sparkleMove 5s infinite ease-in-out;
+    }
+
+    @keyframes sparkleMove {
+      0% { transform: translateY(0); opacity: 0.8; }
+      50% { transform: translateY(-10px); opacity: 1; }
+      100% { transform: translateY(0); opacity: 0.8; }
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(90deg, #ffc8e4, #d6ccff);
+      color: #555;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
     footer {
       text-align: center;
-      color: #777;
+      color: #888;
       padding: 30px;
       font-size: 0.9em;
     }
@@ -51,18 +98,28 @@
 </head>
 <body>
   <header>
-    <h1>Simple Life</h1>
+    <h1>Yumekawa Style</h1>
   </header>
+
   <main>
-    <h2>今日のこと</h2>
-    <p>お気に入りのカフェでゆっくり読書☕  
-    穏やかな時間が流れて、心もリセットされた気がする。</p>
+    <div class="sparkle" style="top:20px; left:30px;"></div>
+    <div class="sparkle" style="top:80px; right:40px;"></div>
+    <div class="sparkle" style="bottom:30px; left:60px;"></div>
+
+    <h2>今日のゆめかわ日記</h2>
+    <p>ふわふわの雲みたいなマカロンを食べた☁️  
+    淡い色の世界は、なんだか心がときめく💫</p>
+
+    <a href="#" class="button">もっと見る</a>
   </main>
+
   <footer>
-    © 2025
+    © 2025 Yumekawa Style
   </footer>
 </body>
 </html>
+
+
 
 
 
